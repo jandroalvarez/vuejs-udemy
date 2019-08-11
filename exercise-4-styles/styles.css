@@ -33,3 +33,8 @@
   height: 400px;
   background-color: gold;
 }
+
+#progressBar {
+  background-color: red;
+  height: 50px;
+}

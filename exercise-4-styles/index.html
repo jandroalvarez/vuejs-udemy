@@ -22,13 +22,13 @@
   </div>
   <!-- 5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.  -->
   <div>
-    <input type="text">
-    <div></div>
+    <input type="text" v-model="userColor">
+    <div :style="{backgroundColor: userColor, width:'100px', height:'100px'}"></div>
   </div>
   <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
   <div>
-    <button>Start Progress</button>
-    <div></div>
+    <button @click="startProgress">Start Progress</button>
+    <div id="progressBar" :style="{width: myWidth+'%'}"></div>
   </div>
 </div>
 <script src="app.js"></script>

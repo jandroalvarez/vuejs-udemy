@@ -3,7 +3,10 @@ new Vue({
   data: {
     activeEffect:'',
     userClass: '',
+    userClass2: '',
     isBlack:false,
+    userColor: 'blue',
+    myWidth:0
   },
   methods: {
     startEffect: function() {
@@ -16,6 +19,14 @@ new Vue({
       else
         vm.activeEffect = 'shrink';        
     }, 1000);
+    },
+
+    startProgress: function() {
+      var vm = this;
+      setInterval(() => {
+        if(vm.myWidth < 50)
+          vm.myWidth = vm.myWidth + 5;
+      }, 1000);
     }
   }
 });
