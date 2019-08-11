@@ -13,3 +13,23 @@
   background-color: gray;
   width: 50px !important;
 }
+
+.green {
+  color: green;
+}
+
+.big {
+  font-size: 48px;  
+}
+
+.blackhole {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.goldhole {
+  width: 400px;
+  height: 400px;
+  background-color: gold;
+}

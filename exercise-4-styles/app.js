@@ -1,7 +1,9 @@
 new Vue({
   el: '#exercise',
   data: {
-    activeEffect:''
+    activeEffect:'',
+    userClass: '',
+    isBlack:false,
   },
   methods: {
     startEffect: function() {
