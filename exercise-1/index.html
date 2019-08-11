@@ -1,0 +1,39 @@
+<html>
+<body>
+    <div id="exercise">
+        <!-- 1) Fill the <p> below with your Name and Age - using Interpolation -->
+         <p>VueJS is pretty cool - {{ myName }} ({{ myAge }})</p>
+         <!-- 2) Output your age, multiplied by 3 -->
+         <p>{{ myAge * 3 }}</p>
+         <!-- 3) Call a function to output a random float between 0 and 1 (Math.random()) -->
+         <p>{{ getRandomNumber() }}</p>
+         <!-- 4) Search any image on Google and output it here by binding the "src" attribute -->
+         <div>
+             <img style="width:100px;height:100px" :src="myImage" />
+         </div>
+         <!-- 5) Pre-Populate this input with your name (set the "value" attribute) -->
+         <div>
+             <input type="text" :value="myName">
+         </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <script>
+    
+    Vue.config.devtools = true;
+
+    new Vue({
+        el:"#exercise",
+        data: {
+        myName: "Alejandro",
+        myAge: 31,
+        myImage: "data:image/webp;base64,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"
+        },
+        methods:{
+            getRandomNumber() {
+                return Math.random();
+            }
+        }    
+    });
+     </script>
+</body>
+</html>
